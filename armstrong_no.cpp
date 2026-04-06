@@ -1,28 +1,27 @@
 #include<iostream>
 using namespace std;
 int main()
-//rem= remainder(logic for keeping or selecting last digit)
-//n for input
+//remainder=(logic for keeping or selecting last digit)
 //a for checking armstrong condition i.e. sum of cubes of every digit = original no. n
-// s is temporary variable for loop for operating on input no.
+// copyOFinput is temporary variable for loop for operating on input no.
 {
-    int n,rem,a=0,s;
+    int userInput,remainder,a=0,copyOFinput;
     cout<<"Enter the no. :";
-    cin>>n;
-    s=n;
-    while(s>0)
+    cin>>userInput;
+    copyOFinput=userInput;
+    while(copyOFinput>0)
     {
-        rem=s%10;
-        a=a+rem*rem*rem;
-        s=s/10;
+        remainder=copyOFinput%10;
+        a=a+remainder*remainder*remainder;
+        copyOFinput=copyOFinput/10;
     }
-    if(a==n) 
+    if(a==userInput) 
     {
-        cout<<n<<" is armstrong no.";
+        cout<<userInput<<" is armstrong no.";
     } 
     else
     {
-        cout<<n<<" is not a armstrong no.";
+        cout<<userInput<<" is not a armstrong no.";
     }
     return 0;
 }

@@ -2,14 +2,14 @@
 using namespace std;
 int main()
 {
-    int n,r;
+    int userInput,remainder;
     cout<<"Enter the no. :";
-    cin>>n;
-    while(n>0)
+    cin>>userInput;
+    while(userInput>0)
     {
-        r=n%10;
-        n=n/10;
-        cout<<r<<endl;
+        remainder=userInput%10;
+        userInput=userInput/10;
+        cout<<remainder<<endl;
     }  
     return 0;
 }
