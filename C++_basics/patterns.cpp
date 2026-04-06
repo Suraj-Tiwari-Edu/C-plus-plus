@@ -11,6 +11,8 @@ int main()
     cout<<"lower right triangle=6\n";
     cout<<"diagonal=7\n";
     cout<<"opposite diagonal=8\n";
+    cout<<"Inverted Pyramid=9\n";
+    cout<<"Pyramid=10\n";
     cout<<"enter value of pattern you want to print\n";
     cin>>value;
     switch(value)
@@ -87,7 +89,7 @@ int main()
         break;
         case 6: //Lower right triangle
         {
-            int n=5;
+            int n=4;
             for(int i=0;i<n;i++)
             {
                 for(int j=0;j<n;j++)
@@ -139,6 +141,43 @@ int main()
                  cout<<"* ";
              }
              cout<<endl;
+            }
+        }
+        break;
+        case 9: //Inverted Pyramid
+        {
+            int rows=5;
+            int k=0;
+            for(int i=1;i<=rows;++i)
+            {
+                for(int spaces=1;spaces<i;++spaces)
+                {
+                    cout<<" ";
+                }
+                while(k!=2*rows-(2*i-1))
+                {
+                    cout<<"*";
+                    ++k;
+                }
+                k=0;
+                cout<<endl;
+            }
+        }
+        break;
+        case 10:    //Pyramid
+        {
+            int rows=5;
+            for(int i=1;i<=rows;++i)
+            {
+                for(int spaces=0;spaces<rows-i;++spaces)
+                {
+                    cout<<" ";
+                }
+                for(int stars=1;stars<=2*i-1;++stars)
+                {
+                    cout<<"*";
+                }
+                cout<<endl;
             }
         }
         break;

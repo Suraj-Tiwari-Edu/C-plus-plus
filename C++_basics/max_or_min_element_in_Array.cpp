@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-    float A[100],max,min;
     int  userInput,range;
     cout<<"For finding maximum, input 1 and for finding min, input 2: ";
     cin>>userInput;
     cout<<"Enter range of Array: ";
     cin>>range;
+    float A[range],max,min;
     cout<<"Enter elements:\n";
     for(int i=0;i<range;i++)
     {

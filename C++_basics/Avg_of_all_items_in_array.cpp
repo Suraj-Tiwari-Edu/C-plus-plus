@@ -14,6 +14,6 @@ int main()
     }
     avg=sum/no_of_element;
     cout<<endl;
-    cout<<avg;
+    cout<<"avg of given items is "<<avg;
     return 0;
 }
